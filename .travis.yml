@@ -1,0 +1,9 @@
+sudo: required
+
+services:
+  - docker
+
+install: ./docker-build.sh
+script: ./docker-test.sh
+after_success:
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then ./docker-push.sh; fi
