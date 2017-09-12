@@ -1,6 +1,5 @@
 FROM node:6.10-alpine
 
-EXPOSE 3000
 CMD npm start
 
 RUN adduser -D rabblerouser
