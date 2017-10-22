@@ -1,6 +1,6 @@
 FROM node:8-alpine
 
-CMD npm start
+CMD yarn start
 
 RUN adduser -D rabblerouser
 WORKDIR /app
