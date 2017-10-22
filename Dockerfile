@@ -10,6 +10,6 @@ ONBUILD COPY . /app
 ONBUILD RUN chown -R rabblerouser /app
 ONBUILD USER rabblerouser
 
-ONBUILD RUN npm install
+ONBUILD RUN yarn
 
 ONBUILD ENV NODE_ENV production
